@@ -1,0 +1,45 @@
+.Header{
+    font-size: 32px;
+    width: 100%;
+    height: 60px;
+    background-color: yellowgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.star-rating-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stars {
+  display: flex; 
+  font-size: 2.5em; 
+  color: lightgray;
+  cursor: pointer; 
+}
+
+.star {
+  margin: 0 2px; 
+  font-size: 40px;
+}
+
+.ratingPara {
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #555;
+  font-weight: bold;
+}
+
+.star-filled{
+    color: gold;
+}
