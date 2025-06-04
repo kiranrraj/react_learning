@@ -60,3 +60,9 @@
   background: #000;
   color: #fff;
 }
+
+.btn:disabled{
+  box-shadow: none;
+  color: #000;
+  background-color: gray;
+}
