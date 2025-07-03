@@ -1,91 +1,69 @@
-import { useState } from "react";
-import myData from "./data";
+import React, { useState } from "react"
+import myData from "./data"
+
 
 export default function Accordion() {
-  const [openid, setOpenid] = useState(null);
-  const [multiselect, setMultiselect] = useState(false);
-  const [multiIds, setMultiIds] = useState([]);
-  let isCurrentAnswerVisible;
+    let content = <p>No data found</p>;
+    let [multiSelect, setMultiSelect] = useState(false)
+    let [activeIdList, setActiveIdList] = useState([])
 
-  // Function to display answers based on status of multiselect and card selected
-  function showAnswer(id, ans) {
-    if (multiselect) {
-      if (multiIds.includes(id)) {
-        return <h3 className="answer">{ans}</h3>;
-      } else {
-        return null;
-      }
-    } else {
-      if (openid === id) {
-        return <h3 className="answer">{ans}</h3>;
-      } else {
-        return null;
-      }
+    // Toggle answer display
+    function handleActiveIds(id) {
+        if (multiSelect) {
+            if (activeIdList.includes(id)) {
+                setActiveIdList(prev => prev.filter(item => item !== id));
+            } else {
+                setActiveIdList(prev => [...prev, id]);
+            }
+        } else {
+            if (activeIdList.includes(id)) {
+                setActiveIdList([])
+            } else {
+                setActiveIdList([id])
+            }
+
+        }
     }
-  }
 
-  // Set active cards
-  const show = (id) => {
-    if (multiselect) {
-      if (multiIds.includes(id)) {
-        setMultiIds(multiIds.filter((item) => item !== id));
-      } else {
-        setMultiIds([...multiIds, id]);
-      }
-    } else {
-      if (!(openid == id)) {
-        setOpenid(id);
-      } else {
-        setOpenid(null);
-      }
+    function handleMulti() {
+        setMultiSelect((prev) => !prev);
+        setActiveIdList([]);
+        console.log("Multi select mode:", !multiSelect);
     }
-  };
 
-  // Logic to check if the card is open or not
-  function answerStatus(id) {
-    if (!multiselect) {
-      isCurrentAnswerVisible = openid === id;
-    } else {
-      isCurrentAnswerVisible = multiIds.includes(id);
+    if (myData && myData.length > 0) {
+        content = <div className="itemsContainer">{myData.map((data, _) => {
+            return (
+                <div key={data.id} className="itemsBlock">
+                    <div className="questionBlock">
+                        <p className="question" >{data.question}</p>
+                        <button
+                            className="showHide"
+                            onClick={() => { handleActiveIds(data.id) }}
+                        >
+                            {activeIdList.includes(data.id) ? "Hide" : "Show"}
+                        </button>
+                    </div>
+                    {activeIdList.includes(data.id) && (
+                        <p className="answer">{data.answer}</p>
+                    )}
+                </div>
+            )
+        }
+        )}</div>
     }
-    return isCurrentAnswerVisible;
-  }
+    return (
+        <div className="container">
+            <div className="multiBlock">
+                <label htmlFor="multi">Multi Select</label>
+                <input type="checkbox" name="multi" id="multi" onChange={handleMulti}
+                    checked={multiSelect} />
+            </div>
+            {content}
 
-  // Handle multiselect
-  const handleMultiselect = (status) => {
-    if (!multiselect) {
-      setMultiIds([]);
-      setOpenid(null);
-    }
-    setMultiselect(status);
-  };
+        </div>
 
-  return (
-    <div className="container">
-      <div className="select">
-        <label htmlFor="multi">Multi Selection</label>
-        <input
-          type="checkbox"
-          checked={multiselect}
-          name="multi"
-          id="multi"
-          onChange={() => {
-            handleMultiselect(!multiselect);
-          }}
-        />
-      </div>
-      {myData.map((data) => {
-        return (
-          <div className="card" key={data.id}>
-            <button className="showBtn" onClick={() => show(data.id)}>
-              {/* Show button text */}
-              {answerStatus(data.id) ? "Hide" : "Show"}
-            </button>
-            <h2 className="question">{data.question}</h2>
-            {showAnswer(data.id, data.answer)}
-          </div>
-        );
-      })}
-    </div>
-  );
+    )
 }
+
+// export default Accordion;

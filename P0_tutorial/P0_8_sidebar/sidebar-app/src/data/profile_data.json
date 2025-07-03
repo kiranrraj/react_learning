@@ -1,0 +1,666 @@
+{
+    "profile": {
+        "children": [
+            {
+                "name": "Alice Smith",
+                "position": "Manager",
+                "department": "Sales",
+                "manager": null,
+                "location": "New York",
+                "email": {
+                    "primary": "alice.smith@example.com",
+                    "secondary": "alice0@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1000",
+                    "secondary": "+1-303-555-2000"
+                },
+                "address": {
+                    "home": {
+                        "address1": "100 3rd Blvd",
+                        "address2": "Apt 1",
+                        "street": "Oak St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "100 3rd Blvd",
+                        "address2": "Apt 1",
+                        "street": "Oak St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Bob Johnson",
+                "position": "Analyst",
+                "department": "HR",
+                "manager": "Charlie Williams",
+                "location": "New York",
+                "email": {
+                    "primary": "bob.johnson@example.com",
+                    "secondary": "bob1@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1001",
+                    "secondary": "+1-303-555-2001"
+                },
+                "address": {
+                    "home": {
+                        "address1": "101 2nd Ave",
+                        "address2": "Apt 2",
+                        "street": "Maple Dr",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "101 2nd Ave",
+                        "address2": "Apt 2",
+                        "street": "Maple Dr",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Charlie Williams",
+                "position": "Consultant",
+                "department": "Marketing",
+                "manager": "David Brown",
+                "location": "San Francisco",
+                "email": {
+                    "primary": "charlie.williams@example.com",
+                    "secondary": "charlie2@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1002",
+                    "secondary": "+1-303-555-2002"
+                },
+                "address": {
+                    "home": {
+                        "address1": "102 3rd Blvd",
+                        "address2": "Apt 3",
+                        "street": "2nd Ave",
+                        "city": "San Francisco",
+                        "state": "CA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "102 3rd Blvd",
+                        "address2": "Apt 3",
+                        "street": "2nd Ave",
+                        "city": "San Francisco",
+                        "state": "CA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "David Brown",
+                "position": "Manager",
+                "department": "Support",
+                "manager": "Eve Jones",
+                "location": "Seattle",
+                "email": {
+                    "primary": "david.brown@example.com",
+                    "secondary": "david3@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1003",
+                    "secondary": "+1-303-555-2003"
+                },
+                "address": {
+                    "home": {
+                        "address1": "103 Oak St",
+                        "address2": "Apt 4",
+                        "street": "Oak St",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "103 Oak St",
+                        "address2": "Apt 4",
+                        "street": "Oak St",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Eve Jones",
+                "position": "Engineer",
+                "department": "Support",
+                "manager": "Frank Miller",
+                "location": "Seattle",
+                "email": {
+                    "primary": "eve.jones@example.com",
+                    "secondary": "eve4@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1004",
+                    "secondary": "+1-303-555-2004"
+                },
+                "address": {
+                    "home": {
+                        "address1": "104 Park Lane",
+                        "address2": "Apt 5",
+                        "street": "Main St",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "104 Park Lane",
+                        "address2": "Apt 5",
+                        "street": "Main St",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Frank Miller",
+                "position": "Engineer",
+                "department": "Finance",
+                "manager": null,
+                "location": "Seattle",
+                "email": {
+                    "primary": "frank.miller@example.com",
+                    "secondary": "frank5@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1005",
+                    "secondary": "+1-303-555-2005"
+                },
+                "address": {
+                    "home": {
+                        "address1": "105 2nd Ave",
+                        "address2": "Apt 6",
+                        "street": "Maple Dr",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "105 2nd Ave",
+                        "address2": "Apt 6",
+                        "street": "Maple Dr",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Grace Davis",
+                "position": "Analyst",
+                "department": "Finance",
+                "manager": null,
+                "location": "New York",
+                "email": {
+                    "primary": "grace.davis@example.com",
+                    "secondary": "grace6@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1006",
+                    "secondary": "+1-303-555-2006"
+                },
+                "address": {
+                    "home": {
+                        "address1": "106 Maple Dr",
+                        "address2": "Apt 7",
+                        "street": "Main St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "106 Maple Dr",
+                        "address2": "Apt 7",
+                        "street": "Main St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Hannah Garcia",
+                "position": "Consultant",
+                "department": "Support",
+                "manager": null,
+                "location": "New York",
+                "email": {
+                    "primary": "hannah.garcia@example.com",
+                    "secondary": "hannah7@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1007",
+                    "secondary": "+1-303-555-2007"
+                },
+                "address": {
+                    "home": {
+                        "address1": "107 Park Lane",
+                        "address2": "Apt 8",
+                        "street": "Main St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "107 Park Lane",
+                        "address2": "Apt 8",
+                        "street": "Main St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Ian Rodriguez",
+                "position": "Consultant",
+                "department": "Finance",
+                "manager": null,
+                "location": "Austin",
+                "email": {
+                    "primary": "ian.rodriguez@example.com",
+                    "secondary": "ian8@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1008",
+                    "secondary": "+1-303-555-2008"
+                },
+                "address": {
+                    "home": {
+                        "address1": "108 Main St",
+                        "address2": "Apt 9",
+                        "street": "3rd Blvd",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "108 Main St",
+                        "address2": "Apt 9",
+                        "street": "3rd Blvd",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Julia Wilson",
+                "position": "Manager",
+                "department": "Engineering",
+                "manager": null,
+                "location": "Chicago",
+                "email": {
+                    "primary": "julia.wilson@example.com",
+                    "secondary": "julia9@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1009",
+                    "secondary": "+1-303-555-2009"
+                },
+                "address": {
+                    "home": {
+                        "address1": "109 Oak St",
+                        "address2": "Apt 10",
+                        "street": "Maple Dr",
+                        "city": "Chicago",
+                        "state": "IL",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "109 Oak St",
+                        "address2": "Apt 10",
+                        "street": "Maple Dr",
+                        "city": "Chicago",
+                        "state": "IL",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Kevin Smith",
+                "position": "Analyst",
+                "department": "Marketing",
+                "manager": "Laura Johnson",
+                "location": "New York",
+                "email": {
+                    "primary": "kevin.smith@example.com",
+                    "secondary": "kevin10@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1010",
+                    "secondary": "+1-303-555-2010"
+                },
+                "address": {
+                    "home": {
+                        "address1": "110 Oak St",
+                        "address2": "Apt 11",
+                        "street": "2nd Ave",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "110 Oak St",
+                        "address2": "Apt 11",
+                        "street": "2nd Ave",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Laura Johnson",
+                "position": "Specialist",
+                "department": "Finance",
+                "manager": null,
+                "location": "Austin",
+                "email": {
+                    "primary": "laura.johnson@example.com",
+                    "secondary": "laura11@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1011",
+                    "secondary": "+1-303-555-2011"
+                },
+                "address": {
+                    "home": {
+                        "address1": "111 2nd Ave",
+                        "address2": "Apt 12",
+                        "street": "Park Lane",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "111 2nd Ave",
+                        "address2": "Apt 12",
+                        "street": "Park Lane",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Mike Williams",
+                "position": "Coordinator",
+                "department": "Marketing",
+                "manager": null,
+                "location": "Seattle",
+                "email": {
+                    "primary": "mike.williams@example.com",
+                    "secondary": "mike12@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1012",
+                    "secondary": "+1-303-555-2012"
+                },
+                "address": {
+                    "home": {
+                        "address1": "112 Oak St",
+                        "address2": "Apt 13",
+                        "street": "Park Lane",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "112 Oak St",
+                        "address2": "Apt 13",
+                        "street": "Park Lane",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Nina Brown",
+                "position": "Manager",
+                "department": "Engineering",
+                "manager": "Oscar Jones",
+                "location": "Austin",
+                "email": {
+                    "primary": "nina.brown@example.com",
+                    "secondary": "nina13@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1013",
+                    "secondary": "+1-303-555-2013"
+                },
+                "address": {
+                    "home": {
+                        "address1": "113 Main St",
+                        "address2": "Apt 14",
+                        "street": "Oak St",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "113 Main St",
+                        "address2": "Apt 14",
+                        "street": "Oak St",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Oscar Jones",
+                "position": "Manager",
+                "department": "Finance",
+                "manager": null,
+                "location": "Seattle",
+                "email": {
+                    "primary": "oscar.jones@example.com",
+                    "secondary": "oscar14@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1014",
+                    "secondary": "+1-303-555-2014"
+                },
+                "address": {
+                    "home": {
+                        "address1": "114 2nd Ave",
+                        "address2": "Apt 15",
+                        "street": "2nd Ave",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "114 2nd Ave",
+                        "address2": "Apt 15",
+                        "street": "2nd Ave",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Paula Miller",
+                "position": "Analyst",
+                "department": "Support",
+                "manager": "Quinn Davis",
+                "location": "Austin",
+                "email": {
+                    "primary": "paula.miller@example.com",
+                    "secondary": "paula15@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1015",
+                    "secondary": "+1-303-555-2015"
+                },
+                "address": {
+                    "home": {
+                        "address1": "115 3rd Blvd",
+                        "address2": "Apt 16",
+                        "street": "Main St",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "115 3rd Blvd",
+                        "address2": "Apt 16",
+                        "street": "Main St",
+                        "city": "Austin",
+                        "state": "TX",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Quinn Davis",
+                "position": "Analyst",
+                "department": "Engineering",
+                "manager": "Rachel Garcia",
+                "location": "Boston",
+                "email": {
+                    "primary": "quinn.davis@example.com",
+                    "secondary": "quinn16@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1016",
+                    "secondary": "+1-303-555-2016"
+                },
+                "address": {
+                    "home": {
+                        "address1": "116 Park Lane",
+                        "address2": "Apt 17",
+                        "street": "2nd Ave",
+                        "city": "Boston",
+                        "state": "MA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "116 Park Lane",
+                        "address2": "Apt 17",
+                        "street": "2nd Ave",
+                        "city": "Boston",
+                        "state": "MA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Rachel Garcia",
+                "position": "Specialist",
+                "department": "HR",
+                "manager": null,
+                "location": "Seattle",
+                "email": {
+                    "primary": "rachel.garcia@example.com",
+                    "secondary": "rachel17@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1017",
+                    "secondary": "+1-303-555-2017"
+                },
+                "address": {
+                    "home": {
+                        "address1": "117 Park Lane",
+                        "address2": "Apt 18",
+                        "street": "3rd Blvd",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "117 Park Lane",
+                        "address2": "Apt 18",
+                        "street": "3rd Blvd",
+                        "city": "Seattle",
+                        "state": "WA",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Steve Rodriguez",
+                "position": "Manager",
+                "department": "HR",
+                "manager": "Tina Wilson",
+                "location": "New York",
+                "email": {
+                    "primary": "steve.rodriguez@example.com",
+                    "secondary": "steve18@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1018",
+                    "secondary": "+1-303-555-2018"
+                },
+                "address": {
+                    "home": {
+                        "address1": "118 3rd Blvd",
+                        "address2": "Apt 19",
+                        "street": "Park Lane",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "118 3rd Blvd",
+                        "address2": "Apt 19",
+                        "street": "Park Lane",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            },
+            {
+                "name": "Tina Wilson",
+                "position": "Specialist",
+                "department": "Finance",
+                "manager": "Alice Smith",
+                "location": "New York",
+                "email": {
+                    "primary": "tina.wilson@example.com",
+                    "secondary": "tina19@altmail.com"
+                },
+                "phone_number": {
+                    "primary": "+1-202-555-1019",
+                    "secondary": "+1-303-555-2019"
+                },
+                "address": {
+                    "home": {
+                        "address1": "119 Park Lane",
+                        "address2": "Apt 20",
+                        "street": "Main St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    },
+                    "office": {
+                        "address1": "119 Park Lane",
+                        "address2": "Apt 20",
+                        "street": "Main St",
+                        "city": "New York",
+                        "state": "NY",
+                        "country": "USA"
+                    }
+                }
+            }
+        ]
+    }
+}

@@ -1,5 +1,5 @@
 export default function Header() {
-    return(
-        <div className="Header">Accordion App</div>
+    return (
+        <div className="header">Accordion App</div>
     )
 }
