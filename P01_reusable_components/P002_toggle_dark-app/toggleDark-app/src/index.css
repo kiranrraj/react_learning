@@ -1,0 +1,18 @@
+/* index.css */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: #ffffff; 
+  color: #333333;
+}
+
+body.dark-mode {
+  background-color: #282c34; 
+  color: #f0f0f0;
+}
