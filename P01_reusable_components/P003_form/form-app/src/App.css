@@ -1,0 +1,206 @@
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.5; 
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.bg-gradient-to-br {
+  background-image: linear-gradient(to bottom right, #eff6ff, #e0e7ff); /* Light blue to light indigo gradient */
+}
+
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-center { justify-content: center; }
+.p-4 { padding: 1rem; } 
+
+
+@media (min-width: 640px) { 
+  .sm\:p-6 { padding: 1.5rem; }
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 1.5rem; 
+  border-radius: 0.75rem; 
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); 
+  width: 100%;
+  max-width: 28rem; 
+  border: 1px solid #e5e7eb; 
+}
+
+@media (min-width: 640px) { 
+  .form-container {
+    padding: 2rem; 
+  }
+}
+
+.form-title {
+  font-size: 1.875rem; 
+  line-height: 2.25rem;
+  font-weight: 800; 
+  color: #1f2937; 
+  margin-bottom: 1.5rem; 
+  text-align: center;
+}
+
+.form-description {
+  color: #4b5563;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-spacing > *:not([hidden]) ~ *:not([hidden]) {
+  margin-top: 1.5rem; 
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem; 
+  line-height: 1.25rem;
+  font-weight: 500; 
+  color: #374151; 
+  margin-bottom: 0.5rem;
+}
+
+/* Input and Select Field Styling */
+.form-input {
+  width: 100%;
+  padding: 0.5rem 1rem; 
+  border-width: 1px;
+  border-style: solid;
+  border-color: #d1d5db; 
+  border-radius: 0.5rem; 
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); 
+  font-size: 0.875rem; 
+  line-height: 1.25rem;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+}
+
+.form-input:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5); 
+  border-color: #3b82f6; 
+}
+
+.input-invalid {
+  border-color: #ef4444; 
+}
+
+.error-message {
+  color: #ef4444; 
+  font-size: 0.75rem; 
+  line-height: 1rem;
+  margin-top: 0.25rem; 
+}
+
+.password-input-container {
+  position: relative;
+}
+
+.toggle-password-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  padding-right: 0.75rem; 
+  display: flex;
+  align-items: center;
+  font-size: 0.875rem; 
+  line-height: 1.25rem; 
+  color: #6b7280; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.toggle-password-button:focus {
+  outline: none;
+}
+
+.toggle-password-button:hover {
+  color: #4b5563; 
+}
+
+.icon {
+  height: 1.25rem; 
+  width: 1.25rem; 
+}
+
+.password-strength-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  margin-top: 0.25rem; 
+}
+
+/* Password Strength Colors */
+.text-green { color: #16a34a; }
+.text-yellow { color: #d97706; }
+.text-red { color: #ef4444; }
+
+.submission-status-message {
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 500; 
+}
+
+.status-success {
+  color: #16a34a; 
+}
+
+.status-error {
+  color: #ef4444; 
+}
+
+.form-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.75rem 1rem; 
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
+  border-radius: 0.5rem; 
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); 
+  font-size: 0.875rem; 
+  font-weight: 600; 
+  color: #fff; 
+  background-color: #2563eb; 
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
+  transform: scale(1); 
+  cursor: pointer;
+}
+
+.form-button:hover {
+  background-color: #1d4ed8; 
+  transform: scale(1.05); 
+}
+
+.form-button:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.5), 0 0 0 6px rgba(255, 255, 255, 0.5); 
+}
+
+/* Custom shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+  20%, 40%, 60%, 80% { transform: translateX(5px); }
+}
+.animate-shake {
+  animation: shake 0.5s ease-in-out;
+}
